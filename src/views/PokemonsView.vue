@@ -2,9 +2,11 @@
 import {RouterLink} from 'vue-router';
 import {useGetData} from '@/composables/getData';
 import LoadingSpinner from '../components/LoadingSpinner.vue';
+import {useCounterStore} from '@/store/counter'
 
 
 const {data, getData, loading, error} = useGetData();
+
 
 getData("https://pokeapi.co/api/v2/pokemon");
 
